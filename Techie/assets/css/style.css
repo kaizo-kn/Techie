@@ -16,7 +16,7 @@
     --main-theme-color-2: #17a689;
     --main-theme-color-3: #37a345;
     --main-theme-color-4: #ffd354;
-    --main-theme-color: #008739;
+    --main-theme-color: #17a689;
 }
 
 body {
@@ -569,7 +569,7 @@ section {
 }
 
 .section-bg {
-    background-color: #f9f8ff;
+    background-color: #e5eff1bd;
 }
 
 .section-title {
