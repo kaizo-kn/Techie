@@ -660,6 +660,26 @@ section {
     top: 12px;
 }
 
+.regional{
+    width: 100px;
+    height:100px;
+    cursor: pointer;
+    background-color: var(--main-theme-color);
+    color:white;
+}
+.regional:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    transition: all linear 200ms;
+    background-color:transparent;
+    backdrop-filter: blur(10px);
+    border:solid 1px var(--main-theme-color);
+    color:var(--main-theme-color)
+}
+.icon-box:hover .icon{
+    transform: scale(1.2);
+    transition: all ease-in-out 400ms;
+}
 
 /*--------------------------------------------------------------
 # Counts
