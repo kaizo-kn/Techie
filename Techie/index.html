@@ -1475,7 +1475,7 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
               </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 mt-sm-4 mt-md-4">
               
               <form
                 action="forms/contact.php"
@@ -1653,21 +1653,18 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
       let map;
 
 function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: new google.maps.LatLng(-33.91722, 151.23064),
-    zoom: 16,
-  });
+  map = new google.maps.Map(document.getElementById("gmap_canvas"));
 
   const iconBase =
-    "./assets/img/icons";
+    "./assets/img/icons/";
   const icons = {
     info: {
-      icon: iconBase + "info-i_maps.png",
+      icon: iconBase + "favicon.png",
     },
   };
   const features = [
     {
-      position: new google.maps.LatLng(-33.91721, 151.2263),
+      position: new google.maps.LatLng(3.5811796759801804, 98.67956754233914),
       type: "info",
     }
   ];
