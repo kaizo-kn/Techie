@@ -120,9 +120,6 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
               </ul>
             </li>
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            <li>
-              <a class="getstarted scrollto" href="#about">Get Started</a>
-            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -138,16 +135,16 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
           <div
             class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
           >
-            <h1>Nusantara Palmco</h1>
+            <h1 style="font-size: 3.2rem;">Nusantara PalmCo</h1>
             <h2>Nusantara Palm Oil Company</h2>
           </div>
           <div
-            class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img"
+            class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img d-sm-none d-block d-xl-block d-lg-block"
             data-aos="zoom-in"
             data-aos-delay="150"
           >
-            <img
-              src="assets/img/hero-img.png"
+            <img style="transform:scale(1.7)"
+              src="assets/img/hero.png"
               class="img-fluid animated"
               alt=""
             />
@@ -158,83 +155,56 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
     <!-- End Hero -->
 
     <main id="main">
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-lg-6 order-1 order-lg-2"
-              data-aos="zoom-in"
-              data-aos-delay="150"
-            >
-              <img src="assets/img/about.jpg" class="img-fluid" alt="" />
-            </div>
-            <div
-              class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
-              data-aos="fade-right"
-            >
-              <h3>TENTANG PALMCO</h3>
-              <p>
-                Sejalan dengan transformasi menyeluruh di PTPN Group, dengan
-                melakukan streamlining 13 anak perusahaan Holding Perkebunan
-                Nusantara menjadi 3 sub-holding, maka Sub-Holding PalmCo
-                dibentuk pada 2022 sebagai perusahaan yang fokus pada kelapa
-                sawit.
-              </p>
-              <p>
-                Sejalan dengan arahan Presiden dalam rangka mewujudkan ketahanan
-                pangan, PalmCo dirancang untuk meningkatkan hilirisasi
-                produk-produk kelapa sawit. Palmco menjadi salah satu kunci
-                untuk meningkatkan produktivitas perkebunan, serta kapasitas
-                produksi komoditas olahan sawit, termasuk hasil panen tandan
-                buah segar (TBS), serta kapasitas produksi crude palm oil (CPO),
-                minyak nabati, dan minyak goreng. PalmCo ditargetkan akan
-                menjadi produsen minyak sawit mentah (crude palm oil/CPO)
-                terbesar dunia.
-              </p>
-              <p>
-                Diproyeksikan produksi minyak goreng PTPN Group akan meningkat
-                sampai dengan 1,8 juta ton pada tahun 2026 (meningkat 4 kali
-                lipat dari dari 460.000 ton/tahun di 2021) Sub-Holding PalmCo
-                ditargetkan akan menjadi perusahaan kelapa sawit terbesar dari
-                sisi luas lahan, dan menjadi pemain utama industri sawit dunia,
-                dengan target produksi sebanyak 1,8 juta ton per tahun pada
-                2026.
-              </p>
-            </div>
+         <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 order-2" data-aos="zoom-in" data-aos-delay="150">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
-          <div class="row">
-            <div
-              class="col-lg-6 order-2 order-lg-1"
-              data-aos="fade-right"
-              data-aos-delay="150"
-            >
-              <img src="assets/img/about.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="mt-4 mb-4"></div>
-            <div
-              class="col-lg-6 pt-4 mt-2 pt-lg-0 order-1 order-lg-2 content"
-              data-aos="fade-left"
-            >
-              <h3>VISI DAN MISI</h3>
-              <div class="pl-lg-2">
-                <h4 class="fw-bolder">Visi</h4>
-                <p>
-                  PalmCo ingin menjadi perusahaan sawit terbesar di dunia dan
-                  menjadi pemain utama industri sawit dunia.
-                </p>
-                <h4 class="fw-bolder">Misi</h4>
-                <p>
-                  Misi meningkatkan hilirisasi dan industrialisasi produk-produk
-                  kelapa sawit dan mendukung Proyek Strategis Nasional (PSN)
-                  dalam sektor industri kelapa sawit.
-                </p>
-              </div>
-            </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-1 content" data-aos="fade-right">
+            <h3>Tentang PalmCo</h3>
+            <p class="fst-italic">
+              Palmco adalah bagian dari transformasi menyeluruh di tubuh PTPN Group. Integrasi PTPN Group dilakukan dengan melakukan streamlining 13 anak 
+              perusahaan Holding Perkebunan Nusantara menjadi 3 sub-holding, yakni  PalmCo, SugarCo dan SupportingCo. Transformasi juga dilakukan sebagai 
+              inisiatif Holding Perkebunan Nusantara terhadap Program Strategis Nasional (PSN).  
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> PalmCo ditargetkan akan menjadi pemain utama industri sawit dunia.</li>
+              <li><i class="bi bi-check-circle"></i> PalmCo didirikan dengan tujuan meningkatkan hilirisasi produk-produk kelapa sawit.</li>
+              <li><i class="bi bi-check-circle"></i> PalmCo ditargetkan akan menjadi produsen minyak sawit mentah (crude palm oil/CPO) terbesar dunia.</li>
+            </ul>
+            <!-- <a href="#" class="read-more">Read More <i class="bi bi-long-arrow-right"></i></a> -->
           </div>
         </div>
-      </section>
-      <!-- End About Section -->
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="150">
+              <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="mt-4 mb-4"></div>
+          <div class="col-lg-6 pt-4 mt-2 pt-lg-0 order-1
+              order-lg-2 content" data-aos="fade-left">
+              <h3>VISI DAN MISI</h3>
+              <div class="pl-lg-2">
+                  <h4 class="fw-bolder">
+                      Visi
+                  </h4>
+                  <p>
+                      PalmCo ingin menjadi perusahaan sawit terbesar di dunia dan menjadi pemain utama
+                      industri sawit dunia.
+                  </p>
+                  <h4 class="fw-bolder">
+                      Misi
+                  </h4>
+                  <p>
+                      Misi meningkatkan hilirisasi dan industrialisasi produk-produk kelapa sawit dan
+                      mendukung Proyek Strategis Nasional (PSN) dalam sektor industri kelapa sawit.
+                  </p>
+              </div>
+          </div>
+      </div>
+      </div>
+    </section><!-- End About Section -->
 
       <!-- ======= Counts Section ======= -->
       <section id="counts" class="counts d-none">
@@ -1436,10 +1406,8 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
                 <p>(021) 1234 5678 90</p>
               </div>
             </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-6">
+         
+            <div class="col-lg-6 mt-sm-4 mt-md-4 mt-lg-0 mt-xl-0">
               <div class="mapouter info-box p-2">
                 <div class="gmap_canvas m-0 rounded">
                   <iframe
@@ -1475,7 +1443,7 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
               </div>
             </div>
 
-            <div class="col-lg-6 mt-sm-4 mt-md-4">
+            <div class="col-lg-6 ">
               
               <form
                 action="forms/contact.php"
