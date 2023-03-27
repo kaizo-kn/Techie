@@ -17,6 +17,10 @@
     />
 
     <!-- Vendor CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -336,57 +340,47 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
             style="height: max-content"
             class="row justify-content-center mb-2 mt-3"
           >
-            <div
-              class="col-2"
-            >
+            <div class="col-2">
               <div
                 onmouseover="showRegional(this.id)"
                 id="sumatra"
-                class="d-flex justify-content-center align-items-center rounded-circle p-3 regional "
+                class="d-flex justify-content-center align-items-center rounded-circle p-3 regional"
               >
                 Sumatera
               </div>
             </div>
-            <div
-              class="col-2"
-            >
-              <div
-                onmouseover="showRegional(this.id)"
-                id="kalimantan"
-                class="d-flex justify-content-center align-items-center rounded-circle p-3 regional "
-              >
-                Kalimantan
-              </div>
-            </div>
-            <div
-              class="col-2"
-            >
-              <div
-                onmouseover="showRegional(this.id)"
-                id="sulawesi"
-                class="d-flex justify-content-center align-items-center rounded-circle p-3 regional "
-              >
-                Sulawesi
-              </div>
-            </div>
-            <div
-              class="col-2"
-            >
+            <div class="col-2">
               <div
                 onmouseover="showRegional(this.id)"
                 id="jawa"
-                class="d-flex justify-content-center align-items-center rounded-circle p-3 regional "
+                class="d-flex justify-content-center align-items-center rounded-circle p-3 regional"
               >
                 Jawa
               </div>
             </div>
-            <div
-              class="col-2"
-            >
+            <div class="col-2">
+              <div
+                onmouseover="showRegional(this.id)"
+                id="kalimantan"
+                class="d-flex justify-content-center align-items-center rounded-circle p-3 regional"
+              >
+                Kalimantan
+              </div>
+            </div>
+            <div class="col-2">
+              <div
+                onmouseover="showRegional(this.id)"
+                id="sulawesi"
+                class="d-flex justify-content-center align-items-center rounded-circle p-3 regional"
+              >
+                Sulawesi
+              </div>
+            </div>
+            <div class="col-2">
               <div
                 onmouseover="showRegional(this.id)"
                 id="papua"
-                class="d-flex justify-content-center align-items-center rounded-circle p-3 regional "
+                class="d-flex justify-content-center align-items-center rounded-circle p-3 regional"
               >
                 Papua
               </div>
@@ -402,48 +396,43 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
                 alt=""
               />
               <img
-                data-aos="fade-up"
                 data-aos-delay="100"
                 id="m_jawa"
                 style="position: absolute; top: 0px; left: 0px; z-index: 3"
                 src="assets/img/jawa.png"
-                class="img-fluid d-none"
+                class="img-fluid d-none animate__animated"
                 alt=""
               />
               <img
-                data-aos="fade-up"
                 data-aos-delay="100"
                 id="m_sumatra"
                 style="position: absolute; top: 5px; left: 7px; z-index: 3"
                 src="assets/img/sumatra.png"
-                class="img-fluid d-none"
+                class="img-fluid d-none animate__animated"
                 alt=""
               />
               <img
-                data-aos="fade-up"
                 data-aos-delay="100"
                 id="m_sulawesi"
                 style="position: absolute; top: 5px; left: -4px; z-index: 3"
                 src="assets/img/sulawesi.png"
-                class="img-fluid d-none"
+                class="img-fluid d-none animate__animated"
                 alt=""
               />
               <img
-                data-aos="fade-up"
                 data-aos-delay="100"
                 id="m_kalimantan"
                 style="position: absolute; top: 6px; left: 3px; z-index: 3"
                 src="assets/img/kalimantan.png"
-                class="img-fluid d-none"
+                class="img-fluid d-none animate__animated"
                 alt=""
               />
               <img
-                data-aos="fade-up"
                 data-aos-delay="100"
                 id="m_papua"
                 style="position: absolute; top: 4px; left: -9px; z-index: 3"
                 src="assets/img/papua.png"
-                class="img-fluid d-none"
+                class="img-fluid d-none animate__animated"
                 alt=""
               />
               <br /><br /><br />
@@ -455,7 +444,9 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
       <script>
         function showRegional(id) {
           $(`#m_${id}`).removeClass("d-none");
+          $(`#m_${id}`).addClass("animate__pulse");
           $(`#m_${id}`).siblings().addClass("d-none");
+          $(`#m_${id}`).siblings().removeClass("animate__pulse");
           $("#m_base").removeClass("d-none");
         }
       </script>
@@ -497,10 +488,9 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
                   </svg>
                   <i class="bx bxl-dribbble"></i>
                 </div>
-                <h4><a href="">Lorem Ipsum</a></h4>
+                <h4><a href="">Kelapa Sawit</a></h4>
                 <p>
-                  Voluptatum deleniti atque corrupti quos dolores et quas
-                  molestias excepturi
+                  Deskripsi Produk Kelapa Sawit
                 </p>
               </div>
             </div>
@@ -528,10 +518,9 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
                   </svg>
                   <i class="bx bx-file"></i>
                 </div>
-                <h4><a href="">Sed Perspiciatis</a></h4>
+                <h4><a href="">Benih Sawit</a></h4>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore
+                  Deskripsi Produk Benih Sawit
                 </p>
               </div>
             </div>
@@ -557,12 +546,11 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
                       d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"
                     ></path>
                   </svg>
-                  <i class="bx bx-tachometer"></i>
+                  <i class="bx bxs-factory"></i>
                 </div>
-                <h4><a href="">Magni Dolores</a></h4>
+                <h4><a href="">Workshop</a></h4>
                 <p>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia
+                  Deskripsi Produk Workshop
                 </p>
               </div>
             </div>
@@ -590,10 +578,9 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
                   </svg>
                   <i class="bx bx-layer"></i>
                 </div>
-                <h4><a href="">Nemo Enim</a></h4>
+                <h4><a href="">Inti Sawit</a></h4>
                 <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis
+                  Deskripsi Produk Inti Sawit
                 </p>
               </div>
             </div>
@@ -619,12 +606,11 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
                       d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"
                     ></path>
                   </svg>
-                  <i class="bx bx-slideshow"></i>
+                  <i class="bx bx-droplet"></i>
                 </div>
-                <h4><a href="">Dele Cardo</a></h4>
+                <h4><a href="">CPO</a></h4>
                 <p>
-                  Quis consequatur saepe eligendi voluptatem consequatur dolor
-                  consequuntur
+                  Deskripsi Produk CPO
                 </p>
               </div>
             </div>
@@ -650,12 +636,11 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
                       d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"
                     ></path>
                   </svg>
-                  <i class="bx bx-arch"></i>
+                  <i class="bx bx-coffee"></i>
                 </div>
-                <h4><a href="">Divera Don</a></h4>
+                <h4><a href="">Teh</a></h4>
                 <p>
-                  Modi nostrum vel laborum. Porro fugit error sit minus sapiente
-                  sit aspernatur
+                  Deskripsi Produk Teh
                 </p>
               </div>
             </div>
@@ -746,7 +731,7 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
       <section id="testimonials" class="testimonials section-bg">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>News</h2>
+            <h2>Berita</h2>
             <p>
               Magnam dolores commodi suscipit. Necessitatibus eius consequatur
               ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
@@ -868,10 +853,10 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
       <!-- End Testimonials Section -->
 
       <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio d-none">
+      <section id="portfolio" class="portfolio">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Portfolio</h2>
+            <h2>Galeri</h2>
             <p>
               Magnam dolores commodi suscipit. Necessitatibus eius consequatur
               ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
@@ -1431,32 +1416,32 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
             <div class="col-lg-6">
               <div class="info-box mb-4">
                 <i class="bx bx-map"></i>
-                <h3>Our Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h3>Kantor Pusat</h3>
+                <p>Jl. Letjen Suprapto No.2</p>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-6">
               <div class="info-box mb-4">
                 <i class="bx bx-envelope"></i>
-                <h3>Email Us</h3>
-                <p>contact@example.com</p>
+                <h3>Email</h3>
+                <p>care@nusantarapalmco.id</p>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-6">
               <div class="info-box mb-4">
                 <i class="bx bx-phone-call"></i>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <h3>Telp.</h3>
+                <p>(021) 1234 5678 90</p>
               </div>
             </div>
           </div>
 
           <div class="row">
             <div class="col-lg-6">
-              <div class="mapouter">
-                <div class="gmap_canvas">
+              <div class="mapouter info-box p-2">
+                <div class="gmap_canvas m-0 rounded">
                   <iframe
                     width="100%"
                     height="100%"
@@ -1491,6 +1476,7 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
             </div>
 
             <div class="col-lg-6">
+              
               <form
                 action="forms/contact.php"
                 method="post"
@@ -1498,13 +1484,20 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
                 class="php-email-form"
               >
                 <div class="row">
+                  <di class="col-12 mb-4">
+                    <div style="box-shadow: none;" class="info-box mb-0">
+                      <i class="bx bx-info-circle"></i>
+                      <h3>Kritik dan Saran</h3>
+                      <p>Kritik dan Saran Anda</p>
+                    </div>
+                  </di>
                   <div class="col-md-6 form-group">
                     <input
                       type="text"
                       name="name"
                       class="form-control"
                       id="name"
-                      placeholder="Your Name"
+                      placeholder="Nama Anda"
                       required
                     />
                   </div>
@@ -1514,39 +1507,28 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
                       class="form-control"
                       name="email"
                       id="email"
-                      placeholder="Your Email"
+                      placeholder="Email Anda"
                       required
                     />
                   </div>
-                </div>
-                <div class="form-group mt-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="subject"
-                    id="subject"
-                    placeholder="Subject"
-                    required
-                  />
                 </div>
                 <div class="form-group mt-3">
                   <textarea
                     class="form-control"
                     name="message"
                     rows="5"
-                    placeholder="Message"
+                    placeholder="Pesan"
                     required
                   ></textarea>
                 </div>
                 <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
+                  <div class="sent-message">Kritik dan Saran anda telah terkirim. Terima Kasih.
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit">Send Message</button>
+                  <button type="submit">Kirim</button>
                 </div>
               </form>
             </div>
@@ -1564,12 +1546,9 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
           <div class="row">
             <div class="col-lg-3 col-md-6 footer-contact">
               <h3>Palmco</h3>
-              <p>
-                A108 Adam Street <br />
-                New York, NY 535022<br />
-                United States <br /><br />
-                <strong>Phone:</strong> +1 5589 55488 55<br />
-                <strong>Email:</strong> info@example.com<br />
+              <p>Jl. Letjen Suprapto No.2, Hamdan, Kec. Medan Maimun, Kota Medan, Sumatera Utara 20212<br /><br />
+                <strong>Telp. : </strong>(021) 1234 5678 90<br />
+                <strong>Email : </strong>care@nusantarapalmco.id<br />
               </p>
             </div>
 
@@ -1618,20 +1597,6 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
                   <a href="#">Graphic Design</a>
                 </li>
               </ul>
-            </div>
-
-            <div class="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Join Our Newsletter</h4>
-              <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
-              </p>
-              <form action="" method="post">
-                <input type="email" name="email" /><input
-                  type="submit"
-                  value="Subscribe"
-                />
-              </form>
             </div>
           </div>
         </div>
@@ -1683,4 +1648,41 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
+  <script>
+    $(function(){
+      let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: new google.maps.LatLng(-33.91722, 151.23064),
+    zoom: 16,
+  });
+
+  const iconBase =
+    "./assets/img/icons";
+  const icons = {
+    info: {
+      icon: iconBase + "info-i_maps.png",
+    },
+  };
+  const features = [
+    {
+      position: new google.maps.LatLng(-33.91721, 151.2263),
+      type: "info",
+    }
+  ];
+
+  // Create markers.
+  for (let i = 0; i < features.length; i++) {
+    const marker = new google.maps.Marker({
+      position: features[i].position,
+      icon: icons[features[i].type].icon,
+      map: map,
+    });
+  }
+}
+
+window.initMap = initMap;
+    })
+  </script>
 </html>
