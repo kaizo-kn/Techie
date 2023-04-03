@@ -43,7 +43,60 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
 
   ======================================================== -->
 </head>
+<style>
+  
+/*Breakpoints*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .brand {
+        font-size: 2.9rem;
+    }
+    .section-title h2{
+        font-size:1.4rem;
+    }
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .brand {
+        font-size: 3.2rem;
+    }
+    .section-title h2{
+        font-size:1.4rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .brand {
+        font-size: 2.9rem;
+    }
+    .section-title h2{
+        font-size:normal;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .brand {
+        font-size: 3.2rem;
+    }
+    .section-title h2{
+        font-size:2rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .brand {
+        font-size: 4rem;
+    }
+    .section-title h2{
+        font-size:2rem;
+    }
+}
+
+</style>
 <body class="section-bg">
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -113,8 +166,8 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
     <div class="container-fluid" data-aos="fade-up">
       <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 style="font-size: 3.2rem;font-family: luxiadisplay;">Nusantara PalmCo</h1>
-          <h2>Nusantara Palm Oil Company</h2>
+          <p class="text-center brand text-light mb-0 fw-bold luxia" >Nusantara PalmCo</p>
+          <h2 class="text-center">Nusantara Palm Oil Company</h2>
         </div>
         <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img d-none d-sm-none d-block d-xl-block d-lg-block"
           data-aos="zoom-in" data-aos-delay="150">
@@ -134,7 +187,7 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
             <img src="assets/img/about.jpg" class="img-fluid" alt="" />
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-1 content" data-aos="fade-right">
-            <h3>Tentang Nusantara PalmCo</h3>
+            <h4 class="text-main">TENTANG KAMI</h4>
             <p class="fst-italic">
               Nusantara PalmCo adalah bagian dari transformasi menyeluruh di tubuh PTPN
               Group. Integrasi PTPN Group dilakukan dengan melakukan
@@ -166,8 +219,8 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
             <img src="assets/img/about.jpg" class="img-fluid" alt="" />
           </div>
           <div class="mt-4 mb-4"></div>
-          <div class="col-lg-6 pt-4 mt-2 pt-lg-0 order-1 order-lg-2 content" data-aos="fade-left">
-            <h3>VISI DAN MISI</h3>
+          <div class="col-lg-6 pt-4 mt-2 pt-lg-0 order-1 order-lg-2 content " data-aos="fade-left">
+            <h2 class="text-main mb-1 fs-5">VISI DAN MISI</h2>
             <div class="pl-lg-2">
               <h4 class="fw-bolder">Visi</h4>
               <p>
@@ -227,11 +280,11 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
         <div class="section-title">
           <h2 class="text-main">Wilayah Kerja</h2>
         </div>
-        <div class="row justify-content-start">
-          <h4 class="fw-bold text-main">Wilayah Sumatera:</h4>
+        <div class="row justify-content-start mb-5 mb-lg-0">
+          <h4 data-aos="fade-up" data-aos-delay="150" class="text-main">Wilayah Sumatera:</h4>
         </div>
         <div data-aos="fade-up" style="height: max-content;transform: translateY(-90px);"
-          class="row justify-content-center mb-2 mt-3">
+          class="row justify-content-center mb-1 mt-3">
           <div class="col-11" data-aos="zoom-in" data-aos-delay="100">
             <img id="m_base" height="auto" style="position: relative; top: 11px; left: 0px; z-index: 1"
               src="assets/img/base.png" class="img-fluid" alt="" />
@@ -277,12 +330,12 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
             <br /><br /><br />
           </div>
         </div>
-        <div class="row justify-content-start">
-          <h4 class="fw-bold text-main">Wilayah Kalimantan:</h4>
+        <div class="row justify-content-start mb-5 mb-lg-0">
+          <h4 data-aos="fade-up" data-aos-delay="150" class=" text-main">Wilayah Kalimantan:</h4>
         </div>
         <div data-aos="fade-up" style="height: max-content;transform: translateY(-90px);"
           class="row justify-content-center mb-2 mt-3">
-          <div class="col-11" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-11" data-aos="zoom-in" data-aos-delay="200">
             <img id="m_base" height="auto" style="position: relative; top: 11px; left: 0px; z-index: 1"
               src="assets/img/base.png" class="img-fluid" alt="" />
             <div style="
@@ -1176,16 +1229,9 @@ hero: linear-gradient(45deg, var(--main-theme-color) 0%, rgb(246 104 0) 100%), u
 
       <div class="container">
         <div class="copyright-wrap d-md-flex py-1">
-          <div class="me-md-auto text-center text-md-start">
+          <div class="me-md-auto text-left text-md-start">
             <div class="copyright">
-              &copy; Copyright <strong><span>Nusantara PalmCo</span></strong>. All Rights Reserved
-            </div>
-            <div class="credits">
-              <!-- All the links in the footer should remain intact. -->
-              <!-- You can delete the links only if you purchased the pro version. -->
-              <!-- Licensing information: https://bootstrapmade.com/license/ -->
-              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Nusantara PalmCo-free-skin-bootstrap-3/ -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              &copy; Copyright <strong><span>Nusantara PalmCo</span><br></strong>All Rights Reserved
             </div>
           </div>
           <div class="social-links text-center text-md-right pt-3 pt-md-0">
